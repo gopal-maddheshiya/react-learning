@@ -1,0 +1,9 @@
+services:
+  - type: static_site
+    name: cards-project
+    env: static
+    branch: main
+    rootDirectory: 04-cards-project
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    autoDeploy: true
